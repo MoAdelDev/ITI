@@ -1,0 +1,109 @@
+<html>
+
+	<head>
+		<title>Register</title>
+	</head>
+
+	<body>
+		<form action="server.html" method="get">
+			<table width=900 height=700 bgcolor="lightgreen" align="center" cellpadding=20 cellspacing=10>
+				<caption><b><font color="blue" size=6 face="Ink Free">Registeration Form</font></b></br></br></caption></br></br>
+				<tr>
+					<th>User Name</th> 
+					<td><input type="text" name="usr_name" placeholder="Enter ur User Name" size=80/></td>
+				</tr>
+
+				<tr>
+					<th>Email</th>
+					<td><input type="email" name="usr_email" placeholder="Enter ur Email" size=80/></td>
+				</tr>
+
+				<tr>
+					<th>Password</th>
+					<td><input type="password" name="usr_password" placeholder="Enter ur Password" size=80/></td>
+				</tr>
+
+				<tr>
+					<th>Graduation Year</th>
+					<td><input type="date" name="graduation_year"/></td>
+				</tr>
+
+
+				<tr>
+					<th>Picture</th>
+					<td><input type="file" name="picture"/></td>
+				</tr>
+
+
+
+				<tr>
+					<th>Age</th>
+					<td><input type="number" name="user_age" min=20 max=30 size=70/></td>
+				</tr>
+
+
+				<tr>
+					<th>Gender</th>
+					<td>
+						<table>
+							<tr>
+								<td><input type="radio" name="gender" value="Male"/> Male 👨</td>
+								<td><input type="radio" name="gender" value="Male"/> Female 👩</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+
+				<tr>
+					<th>Courses</th>
+					<td>
+						<table>
+							<tr>
+								<td><input type="checkbox" name="crs" value="HTML"/> HTML</td>
+								<td><input type="checkbox" name="crs" value="PHP"/> PHP</td>
+								<td><input type="checkbox" name="crs" value="MEARN"/> MEARN</td>
+							</tr>
+
+							<tr>
+								<td><input type="checkbox" name="crs" value="Flutter"/> Flutter</td>
+								<td><input type="checkbox" name="crs" value="Android"/> Android</td>
+								<td><input type="checkbox" name="crs" value="IOS"/> IOS</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<th>Faculty</th>
+					<td>
+						<select name="faculty">
+							<option>Select ur Faculty</option>
+							<option>Enginnering</option>
+							<option>Computer Science</option>
+							<option>Science</option>
+							<option>Medicine</option>
+						</select>
+					
+					</td>
+				</tr>
+
+				<tr>
+					<td colspan=2>
+						<table align="center">
+							<tr>
+								<td>
+									<input type="submit" value="Register"/>
+									<input type="reset" value="Cancel"/>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>			
+		</form>
+	</body>
+
+
+</html>

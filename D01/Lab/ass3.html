@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> Assignment 3</title>
+		
+	</head>
+
+	<body>
+		<h1>a simple c program</h1>
+		<b style="padding: 20px">#include &lt;studio&gt;</b><br/>
+		<b style="padding: 20px">#include &lt;conio&gt;</b><br/>
+		<b style="padding: 20px">int exp(int base , int power)</b><br/>
+		<b style="padding: 20px">{</b><br/>
+		<b style="padding: 60">if(power==0)</b><br/>
+		<b style="padding: 60px">{</b><br/>
+		<b style="padding: 60px">return 0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };</b><br/>
+		<b style="padding: 60px">else</b><br/>
+		<b style="padding: 60px">{</b><br/>
+		<b style="padding: 80px">power--;</b><br/>
+		<b style="padding: 80px">return base * exp(base,power);</b><br/>
+		<b style="padding: 60px">}</b><br/>
+		<b style="padding: 20px">}</b><br/>
+		<b style="padding: 20px">int main()</b><br/>
+		<b style="padding: 20px">{</b><br/>
+		<b style="padding: 60px">int x=2,y=3;</b><br/>
+		<b style="padding: 60px">clrscr();</b><br/>
+		<b style="padding: 60px">printf("\n&nbsp; %d&nbsp;^&nbsp; %d&nbsp; =&nbsp; %d",x,y,exp(x,y));</b><br/>
+		<b style="padding: 60px">getch();&nbsp;&nbsp;&nbsp;&nbsp;return 0;</b><br/>
+		<b style="padding: 20px">}</b><br/>
+
+	</body>
+
+</html>
