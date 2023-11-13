@@ -1,0 +1,73 @@
+body{
+    background-image: url("../Images/backgroundimage.jpg");
+    background-size: cover;
+}
+#border{
+    width: 600px;
+    height: 700px;
+    outline-style: groove;
+    outline-width: 10px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    outline-color: lightgrey;
+}
+.div_content{
+    width: 450px;
+    border: 2px solid grey;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: pink;
+}
+.img_head{
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+}
+#head_text{
+    font: normal 20px 'tahoma';
+}
+span{
+    display: inline-block;
+}
+a{
+    font: normal 15px 'tahoma';
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title_text{
+    font: bold 15px 'tahoma';
+    text-align: left;
+    text-decoration: underline;
+}
+#title_font{
+    font: bold 12px 'tahoma';
+    text-align: left;
+}
+
+#title_descriptive{
+    font: normal 12px 'tahoma';
+    text-align: left;
+}
+.calculator_div{
+    text-align: left;
+}
+.calculator_img{
+    height: 35px;
+    width: 35px;
+}
+.calculator_img:hover{
+    border: 4px dashed red;
+    cursor: pointer;
+}
+li{
+    text-align: left;
+    list-style: none;
+    list-style-position:inside;
+}
