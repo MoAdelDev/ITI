@@ -2,7 +2,8 @@
 <html>
 <head>
     <title>Assignment 3</title>
-    <style>
+    <link href="styles/ass3style.css" rel="stylesheet"/>
+    <!-- <style>
         table{
             width: 500px;
             padding: 10px;
@@ -33,35 +34,40 @@
         .cellselected{
             color: greenyellow;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <table align="center" cellspacing="">
-        <tr id="head_tr">
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Points</th>
-            <th>Team</th>
-        </tr>
-
-        <tr class="body_tr">
-            <td >1</td>
-            <td>Mohammed Adel</td>
-            <td>120</td>
-            <td>Madrid</td>
-        </tr>
-        <tr id="selectedtr">
-            <td><font class="cellselected">2</font></td>
-            <td><font class="cellselected">Sameh Ahmed</font></td>
-            <td><font class="cellselected">110</font></td>
-            <td><font class="cellselected">Liverpool</font></td>
-        </tr>
-        <tr class="body_tr">
-            <td>3</td>
-            <td>Ahmed Rahem</td>
-            <td>100</td>
-            <td>Barcelona</td>
-        </tr>
-    </table>
+    <div id="container">
+        <table align="center" cellspacing="0" width="500" height="300">
+            <tr id="head_tr">
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+            
+                <tr>
+                    <tr class="body_tr">
+                        <td >1</td>
+                        <td>Mohammed Adel</td>
+                        <td>120</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr class="body_tr">
+                        <td><font class="cellselected">2</font></td>
+                        <td><font class="cellselected">Sameh Ahmed</font></td>
+                        <td><font class="cellselected">110</font></td>
+                        <td><font class="cellselected">Liverpool</font></td>
+                    </tr>
+                    <tr class="body_tr">
+                        <td>3</td>
+                        <td>Ahmed Rahem</td>
+                        <td>100</td>
+                        <td>Barcelona</td>
+                    </tr>
+            </tr>
+               
+        </table>
+    </div>
 </body>
 </html>

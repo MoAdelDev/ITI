@@ -1,0 +1,37 @@
+body{
+    background-color: blueviolet;
+}
+#table{
+    border: 3px solid blue;
+    margin: auto;
+    width: 500px;
+    height: 800px;
+    text-align: center;
+}
+#header{
+    background-color: blue;
+    text-align: center;
+    height: 100px;
+}
+#column-td{
+    transform: rotate(180deg);
+    width: 100px;
+    background-color: orange;
+}
+#column{
+    transform: rotate(-90deg);
+    font: normal 20px 'tahoma';
+    text-align: center;
+    color: white;
+}
+#content{
+    background-color: purple;
+    color: white;
+    font: normal 15px 'tahoma';
+}
+#fooder {
+    height: 100px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }

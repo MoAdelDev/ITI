@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <script>
+        // variables is not defined in Global Context
+        //console.log(number1); // Exception Error (Number1 is not hoisted)
+        //console.log(number2); // Interpriting Stopped
+        //console.log(number3);
+    </script>
+    <script src="External.js"></script>
+
+    <!--<script>        
+        /*console.log("Number1 : " + number1)
+        console.log("Number2 :" +number2)
+        console.log("Number3 :" +number3)*/
+
+        //let number2=20 // Exception Error so, number2 already declared in Global Context
+        
+        var number1=100;//The value has been changed
+
+        for(let i=0; i<3; i++) {
+            let number2=5; // Defined in Block , not in Global
+            const number3=10; // Defined in Block , not in Global
+            var number1 =50; // Defined in Global Context
+        }
+
+        firstName[3]='B';
+        console.log(firstName);
+        </script>
+
+        <script>
+            console.log(number1 + number2); // 52
+            console.log(flag + number2); // 3
+            console.log(firstName+flag); // Mohammedtrue
+            console.log(number1+firstName); // 50Mohammed
+            console.log(number1*flag);//50
+            console.log(10 * flag); //10
+            console.log(number1 / lastName); //NaN 
+            console.log(fullName + ` 
+               ` + firstName + `  
+               ` + middleName + `
+               ` + lastName);
+
+            console.log(typeof number1);
+            console.log(typeof number2);
+            console.log(typeof number3);
+            
+            console.log(typeof lastName);
+        </script> -->
+</head>
+<body>
+    
+</body>
+</html>
