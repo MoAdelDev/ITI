@@ -3,7 +3,7 @@ const convertWordToPascalCase = (fullName = '') => {
         /\w\S*/g,
         function (txt) {
             // Make first character to Uppercase and remaining character to lowercase  
-            return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+            return txt[0].toUpperCase() + txt.slice(1).toLowerCase();
         }
     );
 }
@@ -26,10 +26,8 @@ const getInputFromUser = (msg) => {
 const getLongestWordFromSentence = (value = '') => {
     var wordSplit = value.split(' ');
     var longestWord = '';
-    var length = 0;
     for (var i = 0; i < wordSplit.length; i++) {
-        if (wordSplit[i].length > length) {
-            length = wordSplit[i].length;
+        if (wordSplit[i].length > longestWord.length) {
             longestWord = wordSplit[i];
         }
     }
@@ -50,22 +48,19 @@ const getMonthName=(year, month, day)=>{
     const monthName=date.toLocaleString('default', {month:"long"});
     return monthName;
 }
-const getRandomNumber = (numbers) => {
-    var number = Math.floor(Math.random() * 11);
-    // check if repeated
-    while (numbers.includes(number)) {
-        // Create another random number
-        number = Math.floor(Math.random() * 11);
-    }
-    return number;
-}
 const createRandomNumbers = () => {
     let randomNumbers = [];
     var randomNumber;
     for (var i = 0; i < 5; i++) {
-        randomNumber=getRandomNumber(randomNumbers);
-        // Push random number to array
-        randomNumbers.push(randomNumber);
+        randomNumber=Math.floor(Math.random() * 11);
+        // check number is repeated or not
+        if(randomNumbers.includes(randomNumber)){
+            randomNumber= Math.floor(Math.random() * 11);
+            i--;
+        }
+        else{
+            randomNumbers.push(randomNumber);
+        }
     }
     return randomNumbers;
 }
