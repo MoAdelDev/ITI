@@ -77,3 +77,41 @@ const suffleArray = (array) => {
     }
     return result;
 }
+
+const setGrades = (studentNumbers, courseNumbers) => {
+    let students = [];
+    for (let i = 0; i < studentNumbers; i++) {
+        let grades = [];
+        for (let j = 0; j < courseNumbers; j++) {
+            let grade = Number(+prompt("Enter the grade of student " + (i + 1) + " of course " + (j + 1)));
+            grades.push(grade);
+        }
+        students.push(grades);
+    }
+    return students;
+}
+
+const getTotalGradesForEachStudent = (students) => {
+    let totalGrades = [];
+    for (let i = 0; i < students.length; i++) {
+        let sum = 0;
+        for (let j = 0; j < students[i].length; j++) {
+            sum += students[i][j];
+        }
+        totalGrades.push(sum);
+    }
+    return totalGrades;
+}
+
+
+const getAverageGradesForEachCourse = (students) => {
+    let averageGrades = [];
+    for (let i = 0; i < students.length; i++) {
+        let average = 0;
+        for (let j = 0; j < students[i].length; j++) {
+            average += students[j][i];
+        }
+        averageGrades.push(Math.floor(average/3));
+    }
+    return averageGrades;
+}
