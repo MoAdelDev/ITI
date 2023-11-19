@@ -49,13 +49,35 @@
 
 
 // Assignment4
-let studentNumbers=Number(+prompt("Enter no of students"));
-let courseNumbers=Number(+prompt("Enter no of courses"));;
-let students=setGrades(studentNumbers, courseNumbers);
-console.table( students);
-let averageGradesForEachCourse=getAverageGradesForEachCourse(students);
+// let studentNumbers=Number(+prompt("Enter no of students"));
+// let courseNumbers=Number(+prompt("Enter no of courses"));;
+// let students=setGrades(studentNumbers, courseNumbers);
+// console.table( students);
+// let averageGradesForEachCourse=getAverageGradesForEachCourse(students);
 
-let averageGradesForEachStudent=getTotalGradesForEachStudent(students);
+// let averageGradesForEachStudent=getTotalGradesForEachStudent(students);
 
-console.log("averageGradesForEachStudent : " + averageGradesForEachStudent);
-console.log("averageGradesForEachCourse : " + averageGradesForEachCourse);
+// console.log("averageGradesForEachStudent : " + averageGradesForEachStudent);
+// console.log("averageGradesForEachCourse : " + averageGradesForEachCourse);
+
+// ------- Reduce Method, it using to sum all elements of an array ----------
+// let array=[1, 2, 3, 4];
+// const initialValue=2;
+// const sumArray=array.reduce((accumlator, currentValue)=> accumlator+currentValue,initialValue);
+// console.log(sumArray);
+
+// ----- Find method, get first element which satisfies the condition
+// let array=[1, 12, 30, 4];
+// const found=array.find((element)=> element>10);
+// console.log(found);
+
+// ----- findIndex method, get first element index which satisfies the condition
+// let array=[1, 12, 30, 4];
+// const found=array.findIndex((element)=> element>10);
+// console.log(found);
+
+// ----- Splice Method ------
+let array=[1, 12, 30, 4, 5, 10];
+array.splice(3,0,50,60,70,80);
+console.log(array);
+
