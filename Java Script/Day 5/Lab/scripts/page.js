@@ -40,4 +40,3 @@ setInterval(()=>{
         image.src=`images/${randomNumber}.jpg`;
 },1000);
 
-

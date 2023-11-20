@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+    <script src="scripts/functions.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <style>
+        .course_div{
+            padding: 20px;
+        }
+        form{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Courses</h1>
+    <div class="course_div"></div>
+    <div class="course_div" align="center">
+            <input name="track_name" type="text" size="15" placeholder="Enter the track name"/>
+            <input type="submit" size="30" value="Add Track" onclick="addTrackList(document.querySelector('input[name=track_name]').value, 
+            document.querySelector('.course_div'))"/>
+            <pre>
+
+            </pre>
+            <input name="course_name" type="text" size="15" placeholder="Enter the course name"/>
+            <select name="track_menu">
+                <option>Select Track</option>
+            </select>
+            <input type="submit" size="30" value="Add Course" onclick="addCourse(document.querySelector('input[name=course_name]').value, document.querySelector(`#${document.querySelector('select[name=track_menu]').value.toLowerCase()}`))"/>
+    </div>
+</body>
+</html>

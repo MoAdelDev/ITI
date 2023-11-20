@@ -23,5 +23,6 @@ const removeCourse=(courseName, listTrackElement)=>{
             break;
         }
     }
+    
     return listObject;
 }
