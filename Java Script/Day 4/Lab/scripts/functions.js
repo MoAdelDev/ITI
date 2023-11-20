@@ -46,7 +46,7 @@ const getEvenNumberCount = (array) => {
 const getRandomriedArray = (min, max, length) => {
     let array = [];
     for (let i = 0; i < length; i += 2) {
-        let number = Math.floor(Math.random() * (max - min) + 1) + min;
+        let number = Math.round(Math.random() * (max - min) + 1) + min;
         array.push(number, number);
     }
     return array;
