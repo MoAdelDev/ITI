@@ -21,14 +21,14 @@ window.addEventListener('load', function () {
     };
     previousButtonObj.onclick = function () {
         if (intervalId == null)
-            currentIndex = previousImage(images, currentIndex);
+            currentIndex=previousImage(images, currentIndex);
             
     };
     slideShowButtonObj.onclick = function () {
         if (intervalId == null)
             intervalId = startSlideShow(images, currentIndex);
     }
-
+    
     stopButtonObj.onclick = function () {
         if (intervalId != null)
             intervalId = stopSlideShow(intervalId);
