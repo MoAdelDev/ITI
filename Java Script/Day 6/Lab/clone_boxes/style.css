@@ -1,0 +1,23 @@
+div{
+    display: inline-block;
+}
+.first_box{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background-color: red;
+}
+.second_box{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+
+}
+.third_box{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+
+}
