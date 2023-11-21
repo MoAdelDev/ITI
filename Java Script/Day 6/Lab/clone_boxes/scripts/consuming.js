@@ -2,15 +2,15 @@ window.addEventListener('load', function(){
     let firstImageObj=document.querySelector('.first_box');
     let secondImageObj=document.querySelector('.second_box');
     let thirdImageObj=document.querySelector('.third_box');
-    
-    
+    let parentObject = document.querySelector('#parent_div');
+
     firstImageObj.onclick=function(){
-        firstImageListener(this,firstImageObj);
+        cloneBoxByClassName(this, '.first_box', parentObject);
     };
     secondImageObj.onclick=function(){
-        secondImageListener(this,secondImageObj);
+        cloneBoxByClassName(this, '.second_box', parentObject);
     };
     thirdImageObj.onclick=function(){
-        thirdImageListener(this,thirdImageObj);
+        cloneBoxByClassName(this, '.third_box', parentObject);
     };
 });

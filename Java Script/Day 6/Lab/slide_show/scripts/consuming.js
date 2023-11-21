@@ -28,7 +28,7 @@ window.addEventListener('load', function () {
         if (intervalId == null)
             intervalId = startSlideShow(images, currentIndex);
     }
-    
+
     stopButtonObj.onclick = function () {
         if (intervalId != null)
             intervalId = stopSlideShow(intervalId);
