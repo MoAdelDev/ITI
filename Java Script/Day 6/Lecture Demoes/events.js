@@ -33,10 +33,6 @@ window.addEventListener("load",function(){
     divBox.onmouseout=function(){     // this keyword
         this.classList.remove("bPink");   
     }
-   
-
-
-
 
 
 

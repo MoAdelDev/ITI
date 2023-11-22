@@ -1,0 +1,16 @@
+#bird{
+    left: 0;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+.flip{
+    transform: rotateY(180deg);
+}
+.hide{
+    visibility: hidden;
+}
+body{
+    cursor: url("images/bird.svg"), auto;
+}
+

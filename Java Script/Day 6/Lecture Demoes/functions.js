@@ -25,7 +25,6 @@ const moveLeft=(imageObject,left)=>{
             moveRight(imageObject,left);
         }
 
-
     },50);
 
 };
