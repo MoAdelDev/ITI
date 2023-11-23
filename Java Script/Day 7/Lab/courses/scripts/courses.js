@@ -14,29 +14,27 @@ window.addEventListener('load', function(){
         event.preventDefault();
         let courseName=courseInputObj.value;
         if(courseName != ""){
-            addCourse(courseName, rightListObj);
+             addCourse(courseName, rightListObj);
         }
     };
     
     rightListObj.onclick=function(event){
         if(event.target.localName=='li'){
-            let courseSelectedObj = this.querySelector(`#${event.target.id}`);
-            leftList= selectCourse(leftList, courseSelectedObj,event);
+            selectCourse(leftList, this,event);
         }
     };
 
     rightUlObj.onclick=function(event){
         if(event.target.localName=='li'){
-            let courseSelectedObj = this.querySelector(`#${event.target.id}`);
-            rightList=selectCourse(rightList, courseSelectedObj, event);
+            selectCourse(rightList, this, event);
         }
     };
 
     rightBtnObj.onclick=function(){
-        leftList=moveCourse(leftList, rightUlObj);
+        moveCourse(leftList, rightUlObj);
     }
     leftBtnObj.onclick=function(){
-        rightList=moveCourse(rightList, rightListObj);
+        moveCourse(rightList, rightListObj);
     }
 
 });//load

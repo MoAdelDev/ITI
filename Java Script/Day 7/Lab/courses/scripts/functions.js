@@ -5,7 +5,8 @@ const addCourse = (courseName, leftListObj) => {
     leftListObj.append(liObj);
 }
 
-const selectCourse = (courseList, courseSelectedObj,event) => {
+const selectCourse = (courseList, liObj,event) => {
+    let courseSelectedObj = liObj.querySelector(`#${event.target.id}`);
     if (!courseList.includes(event.target.id)) {
         courseList.push(event.target.id);
         courseSelectedObj.classList.add('focus');

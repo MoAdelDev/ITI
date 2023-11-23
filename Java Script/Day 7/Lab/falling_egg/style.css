@@ -13,10 +13,6 @@
     right: 0;
 }
 
-div{
-    width: 1000px;
-    height: 1000px;
-}
 
 .hide{
     visibility: hidden;
@@ -25,4 +21,11 @@ body{
     background-image: url('images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#score_container{
+    display: inline-flex;
+    padding: 10px;
+    font-size: 30px;
+    color: blue;
 }
