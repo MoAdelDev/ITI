@@ -1,8 +1,9 @@
 window.addEventListener('load', function(){
     let courseSubmitObj=this.document.querySelector("input[type=submit]");
     let courseInputObj= this.document.querySelector("input[name=course]");
-    let leftListObj=this.document.querySelector("#left_list");
-    let rightListObj=this.document.querySelector("#right_list");
+    
+    let rightListObj=this.document.querySelector("#left_list");
+    let rightUlObj=this.document.querySelector("#right_list");
 
     let leftBtnObj=document.querySelector("#left_btn");
     let rightBtnObj=document.querySelector("#right_btn");
@@ -13,62 +14,29 @@ window.addEventListener('load', function(){
         event.preventDefault();
         let courseName=courseInputObj.value;
         if(courseName != ""){
-            let liObj=document.createElement("li");
-            liObj.innerText=courseName;
-            liObj.id=courseName;
-            leftListObj.append(liObj);
+            addCourse(courseName, rightListObj);
         }
     };
     
-    leftListObj.onclick=function(event){
+    rightListObj.onclick=function(event){
         if(event.target.localName=='li'){
-            let courseSelectedObj=this.querySelector(`#${event.target.id}`);
-            let courseSelectedName=courseInputObj.outerText;
-            if(!leftList.includes(event.target.id)) { 
-                leftList.push(event.target.id);   
-                courseSelectedObj.classList.add('focus');
-            }
-            else{
-                leftList.pop(event.target.id);   
-                courseSelectedObj.classList.remove('focus');
-            }
+            let courseSelectedObj = this.querySelector(`#${event.target.id}`);
+            leftList= selectCourse(leftList, courseSelectedObj,event);
         }
     };
 
-    rightListObj.onclick=function(event){
+    rightUlObj.onclick=function(event){
         if(event.target.localName=='li'){
-            let courseSelectedObj=this.querySelector(`#${event.target.id}`);
-            let courseSelectedName=courseInputObj.outerText;
-            if(!rightList.includes(event.target.id)) { 
-                rightList.push(event.target.id);   
-                courseSelectedObj.classList.add('focus');
-            }
-            else{
-                rightList.pop(event.target.id);   
-                courseSelectedObj.classList.remove('focus');
-            }
+            let courseSelectedObj = this.querySelector(`#${event.target.id}`);
+            rightList=selectCourse(rightList, courseSelectedObj, event);
         }
     };
 
     rightBtnObj.onclick=function(){
-        for(let i=0; i<leftList.length; i++){
-            let liObj=document.querySelector(`#${leftList[i]}`);
-            liObj.classList.remove('focus')
-            rightListObj.append(liObj);
-        }
-        leftList=[];
-
+        leftList=moveCourse(leftList, rightUlObj);
     }
     leftBtnObj.onclick=function(){
-        for(let i=0; i<rightList.length; i++){
-            let liObj=document.querySelector(`#${rightList[i]}`);
-            liObj.classList.remove('focus')
-            leftListObj.append(liObj);
-        }
-        rightList=[];
+        rightList=moveCourse(rightList, rightListObj);
     }
-    
-
-
 
 });//load

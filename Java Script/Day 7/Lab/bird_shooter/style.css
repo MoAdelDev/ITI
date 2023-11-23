@@ -12,6 +12,10 @@
     visibility: hidden;
 }
 body{
-    cursor: url("images/bird.svg"), auto;
+    cursor:crosshair;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
 
