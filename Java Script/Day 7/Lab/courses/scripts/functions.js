@@ -12,7 +12,7 @@ const selectCourse = (courseList, liObj,event) => {
         courseSelectedObj.classList.add('focus');
     }
     else {
-        courseList.pop(event.target.id);
+        delete courseList[courseList.indexOf(event.target.id)];
         courseSelectedObj.classList.remove('focus');
     }
     return courseList;
@@ -20,9 +20,10 @@ const selectCourse = (courseList, liObj,event) => {
 
 const moveCourse=(courseList, ulObj)=>{
     for(let i=0; i<courseList.length; i++){
+        if(!courseList[i]) continue;
         let liObj=document.querySelector(`#${courseList[i]}`);
-        liObj.classList.remove('focus')
-        ulObj.append(liObj);
+            liObj.classList.remove('focus');
+            ulObj.append(liObj);
     }
     courseList=[];
     return courseList;
