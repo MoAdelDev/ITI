@@ -1,18 +1,18 @@
 window.addEventListener('load', function(){
-    let box=new Box();
-
+    let game=new Game();
+    
     this.document.addEventListener('keydown', function(event){
         if(event.key=='ArrowRight'){
-            box.moveRight();
+            game.getBoxObject().moveRight();
         }
         else if(event.key=='ArrowLeft'){
-            box.moveLeft();
+            game.getBoxObject().moveLeft();
         }
         else if(event.key=='ArrowUp'){
-            box.moveUp();
+            game.getBoxObject().moveUp();
         }
         else if(event.key=='ArrowDown'){
-            box.moveDown();
+            game.getBoxObject().moveDown();
         }
     });
 });

@@ -7,11 +7,15 @@
     top: 10px;
 }
 
-
+#score{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+}
 .top_line{
     background-color: red;
     width: 15px;
-    right: 20px;
     top: 0px;
     position: absolute;
 }
@@ -19,7 +23,6 @@
 .bottom_line{
     background-color: red;
     width: 15px;
-    right: 20px;
     bottom: 0px;
     position: absolute;
 }
