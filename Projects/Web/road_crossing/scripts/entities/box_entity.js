@@ -12,6 +12,9 @@ class Box {
     this.#top=this.#boxDivObj.getClientRects()[0].top;
     this.#left=this.#boxDivObj.getClientRects()[0].left;
   }
+  get boxDivObj(){
+    return this.#boxDivObj;
+  }
   moveUp() {
     if(this.#top>10)this.#top-=BOX_VERTICAL_SPEED; 
     this.#updateVerticalPosition(this.#top);

@@ -12,6 +12,7 @@ class Score{
         this.#id=setInterval(()=>{
             this.#score++;
             this.#scoreObject.innerText=`Score : ${this.#score.toString()}`;
+            if(Game.isBoxHittedTheLine) clearInterval(this.#id);
         }, 10);
     }
 

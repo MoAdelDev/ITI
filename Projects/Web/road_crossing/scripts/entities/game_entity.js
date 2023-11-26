@@ -1,22 +1,31 @@
 class Game{
+    static isBoxHittedTheLine = false;
+
     #box;
     #score;
-    #line;
+    #id;
 
     constructor(){
         this.#box=new Box();
         this.#score=new Score();
-        this.#line=new Line();
+        this.#startGame();
     }
 
-    getBoxObject(){
+    get box(){
         return this.#box;
     }
-    getScoreObject(){
+    get score(){
         return this.#score;
     }
-    getLineObject(){
-        return this.#line;
+    #startGame(){
+        new Line(this.#box.boxDivObj);
+        this.#id=setInterval(()=>{
+            if(Game.isBoxHittedTheLine){
+                clearInterval(this.#id);
+                delete this;
+                this.#score=null;
+            }
+            new Line(this.#box.boxDivObj);
+        }, 8000);
     }
-    
 }
