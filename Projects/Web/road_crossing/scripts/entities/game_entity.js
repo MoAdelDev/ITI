@@ -16,11 +16,10 @@ class Game {
     return this.#score;
   }
   #startGame() {
+    this.#removeAllLines();
     Game.isBoxHittedTheLine=false;
     this.#box = new Box();
     this.#score = new Score();
-    this.#removeAllLines();
-    
     new Line(this.#box.boxDivObj);
     this.#id = setInterval(() => {
       if (Game.isBoxHittedTheLine) {
