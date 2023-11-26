@@ -16,29 +16,33 @@ class Game {
     return this.#score;
   }
   #startGame() {
+    Game.isBoxHittedTheLine = false;
     this.#removeAllLines();
-    Game.isBoxHittedTheLine=false;
+
     this.#box = new Box();
+
     this.#score = new Score();
+
     new Line(this.#box.boxDivObj);
+
     this.#id = setInterval(() => {
       if (Game.isBoxHittedTheLine) {
         clearInterval(this.#id);
         alert(`Game Over: your score is ${this.#score.score}`);
         this.#startGame();
-      }else{
+      } else {
         new Line(this.#box.boxDivObj);
       }
     }, 8000);
   }
-  #removeAllLines(){
-    let topLines=document.querySelectorAll('.top_line');
-    topLines.forEach(topLine => {
-        topLine.remove();
+  #removeAllLines() {
+    let topLines = document.querySelectorAll(".top_line");
+    topLines.forEach((topLine) => {
+      topLine.remove();
     });
-    let bottomLines=document.querySelectorAll('.bottom_line');
-    bottomLines.forEach(bottomLine => {
-        bottomLine.remove();
+    let bottomLines = document.querySelectorAll(".bottom_line");
+    bottomLines.forEach((bottomLine) => {
+      bottomLine.remove();
     });
   }
 }
