@@ -9,6 +9,8 @@ class Box {
   
   #initializeProperties(){
     this.#boxDivObj=document.querySelector('div');
+    this.#boxDivObj.style.top='0px';
+    this.#boxDivObj.style.left='0px';
     this.#top=this.#boxDivObj.getClientRects()[0].top;
     this.#left=this.#boxDivObj.getClientRects()[0].left;
   }

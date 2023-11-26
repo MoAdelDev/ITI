@@ -16,7 +16,7 @@ class Score{
         }, 10);
     }
 
-    #stop(){
-        clearInterval(this.#id);
+    get score(){
+        return this.#score;
     }
 }
