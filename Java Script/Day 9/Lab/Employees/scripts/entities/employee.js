@@ -1,19 +1,25 @@
 class Employee extends Person{
     #salary;
     #language;
-    constructor(name, gender,salary, language, image=''){
-        super(name, gender, image);
+    constructor(gender,salary, language, image=''){
+        super(gender, image);
         this.#salary=salary;
         this.#language=language;
     }
 
-    get langugae(){
+    get language(){
         return this.#language;
     }
     get salary(){
         return this.#salary;
     }
 
+    set language(language){
+        this.#language=language;
+    }
+    set salary(salary){
+        this.#salary=salary;
+    }
     // override
     toString(){
         return `${super.name} ->>  ${this.#salary}`

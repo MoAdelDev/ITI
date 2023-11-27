@@ -1,0 +1,28 @@
+#profile_img{
+    width: 150px;
+    height: 150px;
+}
+#full_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+#gender_text{
+    font-size: 18px;
+    font-weight: bold;
+}
+#language_text{
+    font-size: 18px;
+    font-weight: bold;
+}
+#salary_text{
+    font-size: 18px;
+    font-weight: bold;
+}
+div{
+    text-align: center;
+}
+span{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+}
