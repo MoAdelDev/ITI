@@ -41,6 +41,7 @@ class Line {
     this.#id = setInterval(() => {
       if (this.#right > window.innerWidth) {
         clearInterval(this.#id);
+        
       } else {
         this.#right += 2;
         this.#topLineObj.style.right = this.#right + "px";
