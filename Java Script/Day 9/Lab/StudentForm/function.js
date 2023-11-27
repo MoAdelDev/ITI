@@ -27,6 +27,8 @@ const getStudents = (students, tableObject) => {
     element.remove();
   });
   for (let i in students) {
+
+    // Create Elements
     let trObject = document.createElement("tr");
     trObject.classList.add(students[i].department);
     trObject.classList.add("remove");
@@ -37,6 +39,7 @@ const getStudents = (students, tableObject) => {
     let tdGrade = document.createElement("td");
     tdGrade.innerText = students[i].grade;
 
+    // Create Delete button element and add on Click event to it.
     let tdDelete = document.createElement("td");
     let deleteBtn=document.createElement('button');
     deleteBtn.innerText='Delete'
@@ -45,6 +48,8 @@ const getStudents = (students, tableObject) => {
       delete students[i];
       getStudents(students, tableObject);
     });
+
+    // Append elements which created to table
     trObject.appendChild(tdName);
     trObject.appendChild(tdGrade);
     trObject.appendChild(tdDelete);
@@ -54,7 +59,6 @@ const getStudents = (students, tableObject) => {
 
 const filterStudents = (filter, tableObject) => {
   let filterStudents = students.filter((item) => {
-    console.log(filter);
     if (filter == "all") {
       return true;
     } else if (filter == "success") {
@@ -67,7 +71,6 @@ const filterStudents = (filter, tableObject) => {
 };
 
 const sortStudents = (comapareValue, tableObject) => {
-    console.log(comapareValue);
   if (comapareValue == "name") {
     students.sort((a, b) => {
       if (a.name < b.name) {
