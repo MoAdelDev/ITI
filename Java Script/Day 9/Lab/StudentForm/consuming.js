@@ -37,7 +37,6 @@ window.addEventListener('load', function(){
     });
     sortSelectObject.addEventListener('change', function(event){
         event.preventDefault();
-        console.log(sortSelectObject.value);
         sortStudents(sortSelectObject.value, tableObject);
     });
 });

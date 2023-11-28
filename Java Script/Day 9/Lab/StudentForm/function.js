@@ -23,7 +23,7 @@ const addStudent = (name, grade, department, tableObject) => {
 };
 
 const getStudents = (students, tableObject) => {
-  document.querySelectorAll(".remove").forEach((element) => {
+  document.querySelectorAll(".new_rows").forEach((element) => {
     element.remove();
   });
   for (let i in students) {
@@ -31,7 +31,7 @@ const getStudents = (students, tableObject) => {
     // Create Elements
     let trObject = document.createElement("tr");
     trObject.classList.add(students[i].department);
-    trObject.classList.add("remove");
+    trObject.classList.add("new_rows");
     
     let tdName = document.createElement("td");
     tdName.innerText = students[i].name;
