@@ -1,6 +1,8 @@
 const validateGrade = (grade) => {
-  if (grade >= 0 && grade <= 100) {
-    return true;
+  if(grade != ""){
+    if (grade >= 0 && grade <= 100) {
+      return true;
+    }
   }
   return false;
 };
@@ -16,8 +18,14 @@ const validateStudentName = (students, studentName) => {
   return true;
 };
 
+
 const addStudent = (name, grade, department, tableObject) => {
-  let student = new Student(name, department, grade); // Create New Student
+  let student={
+    name,
+    department,
+    grade,
+  };
+
   students.push(student); // Push New Student to students array
   getStudents(students, tableObject);
 };
