@@ -31,7 +31,7 @@ window.addEventListener('load', function(){
             alert("Enter another name");
         }
     }
-
+    
     filterSelectObject.addEventListener('change', function(event){
         filterStudents(filterSelectObject.value, tableObject);
     });

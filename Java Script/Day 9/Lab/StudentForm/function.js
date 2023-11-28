@@ -25,7 +25,7 @@ const addStudent = (name, grade, department, tableObject) => {
     department,
     grade,
   };
-
+  
   students.push(student); // Push New Student to students array
   getStudents(students, tableObject);
 };
@@ -56,7 +56,7 @@ const getStudents = (students, tableObject) => {
       delete students[i];
       getStudents(students, tableObject);
     });
-
+    
     // Append elements which created to table
     trObject.appendChild(tdName);
     trObject.appendChild(tdGrade);
