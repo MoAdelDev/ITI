@@ -1,0 +1,74 @@
+#container{
+    padding: 50px;
+    background-color: white;
+    width: 500px;
+    display: inline-block;
+}
+body{
+    background-color: grey;
+}
+
+#flag_img{
+    width: 500px;
+    height: 250px;
+}
+
+#country_name{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+#continent_name{
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+.details_img{
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.details_text{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#neighbour_container{
+    padding: 50px;
+    background-color: white;
+    width: 500px;
+    display: inline-block;
+}
+
+#neighbour_flag_img{
+    width: 500px;
+    height: 250px;
+}
+
+#neighbour_country_name{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+#neighbour_continent_name{
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+.neighbour_details_img{
+    width: 35px;
+    height: 35px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.neighbour_details_text{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+}
