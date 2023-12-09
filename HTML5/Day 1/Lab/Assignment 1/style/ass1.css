@@ -1,0 +1,61 @@
+#start_button, #stop_button{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: aqua;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#button_container{
+    padding: 40px;
+}
+
+@keyframes box_animation {
+    0%{
+        background-color: yellow;
+        left: 20px;
+        top: 20px;
+    }
+
+    25%{
+        background-color: aqua;
+        left: 400px;
+        top: 20px;
+    }
+
+    50%{
+        background-color: red;
+        left: 400px;
+        top: 400px;
+    }
+    75%{
+        background-color: blue;
+        left: 20px;
+        top: 400px;
+    }
+    99%{
+        background-color: yellow;
+        left: 20px;
+        top: 20px;
+    }
+ 
+}
+#box_section{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    border: 1px solid black;
+    background-color: yellow;
+    animation: box_animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    transition: all 3s;
+}
+
+#box_section:hover{
+    cursor: pointer;
+    /* animation-play-state: paused; */
+}

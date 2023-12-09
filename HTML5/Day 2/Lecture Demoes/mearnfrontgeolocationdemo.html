@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #mymap {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB90FxtYG_ybAYXGkz0ybkmkboE2nEbezI"></script>
+    <script>
+        window.addEventListener('load', function () {
+            mymap = this.document.getElementById('mymap');
+        });//end of load
+        function getlocationfun() {
+            //1- check availability of gelocation in client navigator
+            if (navigator.geolocation) {
+                //exist :  get permission : getcurrentposition
+                navigator.geolocation.getCurrentPosition(getposition, errorhandlere);
+
+            } else {
+                //not exist
+                mymap.innerText = "sorry , your browser not Supor Geolocation , please update and try again !!!!";
+            }
+            //=> true :
+            //2- get permission
+            //true
+            //false
+            //=> false
+        }
+        function getposition(e) {
+            //alert('success');
+            //console.log(e);
+            lat = e.coords.latitude;
+            lon = e.coords.longitude;
+            //latlon = lat + " , " + lon;
+            //mymap.innerText = latlon;
+            // steps to deal with google 
+            //1- create locationobject using googlemaps map(lat,lon);
+            //2- specifiy charactersitics of map : zoom : 16 , center :location which delcared in step 1
+            //3- display map
+            //1- create google latlng ovject ( lat , lon )
+            var location = new google.maps.LatLng(lat, lon);
+            //2- specify specs of map : zoom : , center
+            var specs = { zoom: 17, center: location };
+            // 3 retrive map and display map
+            new google.maps.Map(mymap, specs);
+
+
+        }
+        function errorhandlere() {
+            alert('Error');
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="GetLocationData" onclick="getlocationfun();"/>
+    <div id="mymap">
+
+    </div>
+</body>
+</html>

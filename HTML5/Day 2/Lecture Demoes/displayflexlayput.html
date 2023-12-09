@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        #mainmenue{
+            display:flex;
+            justify-content:space-evenly;
+            min-height:10vh;
+            
+            align-items:center;
+        }
+        #mainmenue>li{
+            list-style:none;
+        }
+        li>a{
+            text-decoration:none;
+            font-weight:bold;
+            color:rgb(138 134 134);
+        }
+        li>a:hover{
+            color:rgb(131 7 7);
+        }
+        #intro{
+            background-image:url(images/laptop_top.jpg);
+            background-position:center;
+            background-size:cover;
+            height:90vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
+        #intro>h3{
+            font:bold 1.2rem tahoma;
+            text-align:center;
+            color:white;
+        }
+            #intro > button {
+                margin: 2rem 0;
+                padding: 1.5rem 2rem;
+                font-weight: bold;
+                border-radius: 20px;
+                background-image: linear-gradient(to left, rgb(133 206 248), rgb(32 92 202));
+            }
+        #intro>button:hover{
+            background-image:linear-gradient(to right , rgb(133 206 248) , rgb(32 92 202));
+        }
+    </style>
+</head>
+<body>
+    <ul id="mainmenue">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <h4>ITI Admission</h4>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+    <section id="intro">
+        <h3>ITI Programs <br/> PTP Program <br/> ITP Program</h3>
+        <button>Register</button>
+    </section>
+</body>
+</html>
