@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <style>
+      input {
+        margin: 20px auto;
+        padding: 10px;
+      }
+      table {
+        padding: 20px;
+        border: 2px solid black;
+      }
+      td,
+      tr,
+      th {
+        padding: 10px;
+        border: 1px solid black;
+      }
+      #data {
+        display: none;
+      }
+    </style>
+    <script>
+      $(document).ready(function () {
+        $("input[name=display_user_data]").on("click", async function () {
+          let userId = $("input[name=user_id]").val();
+          try {
+            let response = await fetch(
+              "https://reqres.in/api/users/" + userId,
+              {
+                method: "get",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+              }
+            );
+            let data = await response.json();
+            let firstName = data["data"]["first_name"];
+            let lastName = data["data"]["last_name"];
+            let id = data["data"]["id"];
+            let email = data["data"]["email"];
+            let avatar = data["data"]["avatar"];
+            let user = data["data"]["data"];
+
+            $("#id").append(id);
+            $("#first_name").appendTo(firstName);
+            $("#last_name").append(lastName);
+            $("#email").append(email);
+            $("#avatar").attr("src", avatar);
+            $("#data").css("display", "contents");
+          } catch (e) {
+            console.log(e);
+          }
+        });
+
+        $("input[name=display_all_user_data]").on("click", async function () {
+          try {
+            let response = await fetch("https://reqres.in/api/users", {
+              method: "get",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            });
+            let data = await response.json();
+
+            let table = document.createElement("table");
+            for (let i in data["data"]) {
+              let tr = document.createElement("tr");
+              for (let j in data["data"][i]) {
+                let td = document.createElement("td");
+                let item = data["data"][i][j];
+                if (j == "avatar") {
+                  let img = document.createElement("img");
+                  img.style.width = 100 + "px";
+                  img.style.height = 100 + "px";
+                  img.setAttribute("src", item);
+                  td.appendChild(img);
+                } else {
+                  td.innerText = item;
+                }
+                tr.appendChild(td);
+              }
+              table.appendChild(tr);
+            }
+            document.querySelector("body").appendChild(table);
+          } catch (e) {
+            console.log(e);
+          }
+        });
+      }); //loaded
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" name="user_id" placeholder="Enter user id" size="30" />
+      <input type="button" name="display_user_data" value="Display Data" />
+      <input
+        type="button"
+        name="display_all_user_data"
+        value="Display All Users"
+      />
+
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
+          <th>Image</th>
+        </tr>
+        <tr id="data">
+          <td id="id"></td>
+          <td id="first_name"></td>
+          <td id="last_name"></td>
+          <td id="email"></td>
+          <td rowspan="2">
+            <img id="avatar" src="" width="100" height="100" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
