@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Images Between Divs</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .drag-container {
+      width: 100vw;
+      height: 300px;
+      border: 2px dashed #ccc;
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: move;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div id="div1" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <p>Drag images here</p>
+    </div>
+
+    <div id="div1" class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Drag images here</p>
+      </div>
+
+    
+  </div>
+
+  <script>
+    function allowDrop(event) {
+      event.preventDefault();
+    }
+
+    function drag(event) {
+      // Store the data being dragged
+      event.dataTransfer.setData("text", event.target.id);
+    }
+
+    function drop(event) {
+      event.preventDefault();
+
+      // Get the dragged data
+      const data = event.dataTransfer.getData("text");
+
+      // Append the dragged element to the drop target
+      const draggedElement = document.getElementById(data);
+      event.target.appendChild(draggedElement);
+    }
+  </script>
+
+  <!-- Add draggable attribute to images -->
+  <img id="image1" src="Images/1.jpg" alt="Image 1" draggable="true" ondragstart="drag(event)">
+  <img id="image2" src="Images/10.jpg" alt="Image 2" draggable="true" ondragstart="drag(event)">
+  <img id="image3" src="Images/12.jpg" alt="Image 3" draggable="true" ondragstart="drag(event)">
+
+</body>
+</html>
