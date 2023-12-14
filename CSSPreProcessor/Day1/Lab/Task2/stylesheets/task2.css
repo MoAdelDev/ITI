@@ -1,0 +1,38 @@
+/* line 8, ../sass/task2.scss */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/task2.scss */
+#container_1 {
+  border: 2px dashed black;
+  background-color: cyan;
+  color: black;
+  margin: 20px;
+}
+
+/* line 17, ../sass/task2.scss */
+#container_2 {
+  border: 2px solid black;
+  background-color: red;
+  color: black;
+  margin: 20px;
+}
+
+/* line 21, ../sass/task2.scss */
+#container_3 {
+  border: 2px solid black;
+  background-color: blue;
+  color: black;
+  margin: 20px;
+}
+/* line 23, ../sass/task2.scss */
+#container_3 #container_4 {
+  border: 2px solid black;
+  background-color: blue;
+  color: black;
+  margin: 20px;
+  margin: 1px;
+}

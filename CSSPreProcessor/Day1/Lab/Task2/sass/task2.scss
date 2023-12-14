@@ -1,0 +1,27 @@
+
+@mixin add_container_style($bgcolor, $borderstyle){
+    border: 2px $borderstyle black;
+    background-color: $bgcolor;
+    color: black;
+    margin: 20px;
+}
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+#container_1{
+    @include add_container_style(cyan, dashed);
+}
+
+#container_2{
+    @include add_container_style(red, solid);
+}
+
+#container_3{
+    @include add_container_style(blue, solid);
+    #container_4{
+        @include add_container_style(blue, solid);
+        margin: 1px;
+    }
+}
