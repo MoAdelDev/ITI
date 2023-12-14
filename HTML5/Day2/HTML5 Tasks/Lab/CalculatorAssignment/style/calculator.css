@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#maincontainer{
+    width: 90vw;
+    height: fit-content;
+    margin: 10px auto;
+    margin-top: 50vh;
+    padding: 20px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    text-align: center;
+}
+.subcontainer{
+    width: 45%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    box-shadow: gainsboro 10px 10px 50px inset, gainsboro -10px -10px 50px inset;
+}
+#add_container{
+    background-color: red;
+}
+
+#multiplication_container{
+    background-color: green;
+}
+.title{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    text-shadow: -1px -1px gray, 1px 1px black;
+    text-align: left; 
+}
+
+input{
+    padding: 10px;
+    width: 20%;
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.operation{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}

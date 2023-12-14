@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+#mainsection{
+    height: 900px;
+    width: 90vw;
+    background-color: orange;
+    opacity: 0.5;
+    margin: 20px auto;
+}
+
+#playlistsection{
+    height: 90%;
+    width: 20%;
+    margin: 10px;
+    display: grid;
+}
+
+.videobtn{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 2s;
+}
+
+.videobtn:hover{
+   background-color: blueviolet;
+   cursor: pointer;
+}
+
+.videobtnfocus{
+    background-color: red;
+    cursor: pointer;
+    transform: rotate(360deg);
+ }
+#videosection{
+    height: 90%;
+    width: 70%;
+    margin: 10px;
+}
+video{
+    width: 90%;
+    height: 90%;
+    margin: 10px auto;
+}
+video:hover{
+    cursor: pointer;
+}
