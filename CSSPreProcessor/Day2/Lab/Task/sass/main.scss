@@ -1,0 +1,11 @@
+@import "./base/reset", "./components/body", "./components/containers",
+  "./components/footer", "./components/inputs", "./components/containers",
+  "./abstracts/mixins";
+
+@include gridmixin("", 12, 0px);
+@include gridmixin("sm", 12, 576px);
+@include gridmixin("md", 12, 768px);
+@include gridmixin("lg", 12, 992px);
+@include gridmixin("xl", 12, 1200px);
+@include gridmixin("xxl", 12, 1400px);
+

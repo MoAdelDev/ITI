@@ -1,0 +1,1039 @@
+/* line 1, ../sass/base/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/components/_body.scss */
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 1, ../sass/components/_containers.scss */
+#mainwrapper {
+  padding: 10px;
+}
+
+/* line 4, ../sass/components/_containers.scss */
+.imgcontainer-p {
+  text-align: right;
+  color: red;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* line 11, ../sass/components/_containers.scss */
+#internalcontainer {
+  text-align: center;
+}
+
+/* line 3, ../sass/components/_footer.scss */
+footer {
+  background-color: blue;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+/* line 3, ../sass/components/_inputs.scss */
+input[type="button"] {
+  background-color: aqua;
+  border: 1px solid white;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 10px;
+  margin: 5px;
+}
+
+/* line 1, ../sass/components/_containers.scss */
+#mainwrapper {
+  padding: 10px;
+}
+
+/* line 4, ../sass/components/_containers.scss */
+.imgcontainer-p {
+  text-align: right;
+  color: red;
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* line 11, ../sass/components/_containers.scss */
+#internalcontainer {
+  text-align: center;
+}
+
+/* line 2, ../sass/abstracts/_mixins.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 0px) {
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-1 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-2 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-3 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-3 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-4 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-4 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-5 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-5 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-6 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-6 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-7 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-7 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-8 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-8 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-9 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-9 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-10 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-10 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-11 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-11 img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* line 10, ../sass/abstracts/_mixins.scss */
+  .col-12 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 14, ../sass/abstracts/_mixins.scss */
+  .col-12 img {
+    height: 100px;
+    width: 100px;
+  }
+}
+/* line 21, ../sass/abstracts/_mixins.scss */
+.imgcontainer {
+  background-image: url("../images/pyramids.jpg");
+  background-repeat: no-repeat;
+  height: 100px;
+  background-size: cover;
+}
+
+/* line 27, ../sass/abstracts/_mixins.scss */
+.div_box {
+  display: flex;
+  font-size: 10px;
+}
+/* line 30, ../sass/abstracts/_mixins.scss */
+.div_box .div_text {
+  display: inline-block;
+}
+/* line 33, ../sass/abstracts/_mixins.scss */
+.div_box .div_image {
+  display: inline-block;
+}
+
+/* line 2, ../sass/abstracts/_mixins.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 576px) {
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-1 {
+    width: 8.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-1 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-2 {
+    width: 16.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-2 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-3 {
+    width: 25%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-3 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-4 {
+    width: 33.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-4 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-5 {
+    width: 41.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-5 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-6 {
+    width: 50%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-6 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-7 {
+    width: 58.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-7 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-8 {
+    width: 66.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-8 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-9 {
+    width: 75%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-9 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-10 {
+    width: 83.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-10 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-11 {
+    width: 91.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-11 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-sm-12 {
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-sm-12 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 50, ../sass/abstracts/_mixins.scss */
+  .div_box {
+    font-size: 18px;
+  }
+
+  /* line 53, ../sass/abstracts/_mixins.scss */
+  .col-md-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* line 58, ../sass/abstracts/_mixins.scss */
+  .imgcontainer {
+    background-image: url("../images/pyramids.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+  }
+}
+/* line 2, ../sass/abstracts/_mixins.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 768px) {
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-1 {
+    width: 8.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-1 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-2 {
+    width: 16.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-2 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-3 {
+    width: 25%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-3 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-4 {
+    width: 33.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-4 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-5 {
+    width: 41.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-5 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-6 {
+    width: 50%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-6 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-7 {
+    width: 58.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-7 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-8 {
+    width: 66.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-8 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-9 {
+    width: 75%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-9 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-10 {
+    width: 83.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-10 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-11 {
+    width: 91.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-11 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-md-12 {
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-md-12 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 50, ../sass/abstracts/_mixins.scss */
+  .div_box {
+    font-size: 18px;
+  }
+
+  /* line 53, ../sass/abstracts/_mixins.scss */
+  .col-md-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* line 58, ../sass/abstracts/_mixins.scss */
+  .imgcontainer {
+    background-image: url("../images/pyramids.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+  }
+}
+/* line 2, ../sass/abstracts/_mixins.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 992px) {
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-1 {
+    width: 8.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-1 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-2 {
+    width: 16.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-2 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-3 {
+    width: 25%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-3 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-4 {
+    width: 33.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-4 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-5 {
+    width: 41.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-5 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-6 {
+    width: 50%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-6 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-7 {
+    width: 58.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-7 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-8 {
+    width: 66.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-8 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-9 {
+    width: 75%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-9 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-10 {
+    width: 83.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-10 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-11 {
+    width: 91.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-11 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-lg-12 {
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-lg-12 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 50, ../sass/abstracts/_mixins.scss */
+  .div_box {
+    font-size: 18px;
+  }
+
+  /* line 53, ../sass/abstracts/_mixins.scss */
+  .col-md-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* line 58, ../sass/abstracts/_mixins.scss */
+  .imgcontainer {
+    background-image: url("../images/pyramids.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+  }
+}
+/* line 2, ../sass/abstracts/_mixins.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 1200px) {
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-1 {
+    width: 8.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-1 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-2 {
+    width: 16.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-2 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-3 {
+    width: 25%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-3 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-4 {
+    width: 33.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-4 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-5 {
+    width: 41.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-5 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-6 {
+    width: 50%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-6 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-7 {
+    width: 58.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-7 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-8 {
+    width: 66.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-8 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-9 {
+    width: 75%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-9 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-10 {
+    width: 83.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-10 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-11 {
+    width: 91.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-11 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xl-12 {
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xl-12 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 50, ../sass/abstracts/_mixins.scss */
+  .div_box {
+    font-size: 18px;
+  }
+
+  /* line 53, ../sass/abstracts/_mixins.scss */
+  .col-md-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* line 58, ../sass/abstracts/_mixins.scss */
+  .imgcontainer {
+    background-image: url("../images/pyramids.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+  }
+}
+/* line 2, ../sass/abstracts/_mixins.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media all and (min-width: 1400px) {
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-1 {
+    width: 8.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-1 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-2 {
+    width: 16.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-2 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-3 {
+    width: 25%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-3 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-4 {
+    width: 33.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-4 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-5 {
+    width: 41.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-5 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-6 {
+    width: 50%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-6 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-7 {
+    width: 58.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-7 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-8 {
+    width: 66.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-8 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-9 {
+    width: 75%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-9 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-10 {
+    width: 83.33333%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-10 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-11 {
+    width: 91.66667%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-11 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 41, ../sass/abstracts/_mixins.scss */
+  .col-xxl-12 {
+    width: 100%;
+    display: inline-block;
+  }
+  /* line 44, ../sass/abstracts/_mixins.scss */
+  .col-xxl-12 img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* line 50, ../sass/abstracts/_mixins.scss */
+  .div_box {
+    font-size: 18px;
+  }
+
+  /* line 53, ../sass/abstracts/_mixins.scss */
+  .col-md-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* line 58, ../sass/abstracts/_mixins.scss */
+  .imgcontainer {
+    background-image: url("../images/pyramids.jpg");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+  }
+}

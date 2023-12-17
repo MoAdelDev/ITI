@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+input[type="button"] {
+    background-color: $btnbgcolor;
+    border: 1px solid white;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  

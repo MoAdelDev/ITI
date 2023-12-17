@@ -1,0 +1,66 @@
+@mixin gridmixin($screeninfex, $numberofcolumns, $breakpoint) {
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    @if ($screeninfex== "") {
+      @media all and(min-width:$breakpoint) {
+        @for $i from 1 through $numberofcolumns {
+          .col-#{$i} {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            img {
+              height: 100px;
+              width: 100px;
+            }
+          }
+        }
+      }
+      .imgcontainer {
+        background-image: url("../images/pyramids.jpg");
+        background-repeat: no-repeat;
+        height: 100px;
+        background-size: cover;
+      }
+      .div_box {
+          display: flex;
+          font-size: 10px;
+          .div_text {
+            display: inline-block;
+          }
+          .div_image {
+            display: inline-block;
+          }
+        }
+  
+    } @else {
+      @media all and(min-width:$breakpoint) {
+        @for $i from 1 through $numberofcolumns {
+          .col-#{$screeninfex}-#{$i} {
+            width: 100/ ($numberofcolumns/$i) * 1%;
+            display: inline-block;
+            img {
+              height: 200px;
+              width: 200px;
+            }
+          }
+        }
+        .div_box {
+          font-size: 18px;
+        }
+        .col-md-2{
+          display: flex;
+          flex-wrap: wrap;
+        }
+  
+        .imgcontainer {
+          background-image: url("../images/pyramids.jpg");
+          background-repeat: no-repeat;
+          height: 250px;
+          background-size: cover;
+        }
+      }
+    }
+  }
