@@ -4,4 +4,9 @@ class Account {
   double balance;
 
   Account(this.accountNumber, this.ownerName, this.balance);
+
+  @override
+  String toString() {
+    return 'Acc number ${this.accountNumber} Owner name ${this.ownerName} balance ${this.balance}';
+  }
 }
